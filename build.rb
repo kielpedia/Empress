@@ -53,8 +53,7 @@ class BlogBuilder
     end
 
     def create_tags_for_post(post_title)
-      print post_title
-      @tags = []
+      @tags = ['test']
     end
 
     def jsonify_posts
