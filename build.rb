@@ -40,14 +40,14 @@ class BlogBuilder
 
     def set_post_metadata
       @posts = []
-      Dir.foreach('./content/posts/') do |item|
-        next if item == '.' or item == '..'
-        title = File.open("./content/posts/#{item}", &:readline)
+      Dir.glob('./content/posts/*.md').each do |item|
+        print item + "\n"
+        title = File.open(item, &:readline)
         title = title.gsub("\n", "")
         title[0] = ''
         title = title.strip
         slug = item[0...-3]
-        publish_date = `git log --format='format:%ci' --diff-filter=A ./content/posts/"#{item}"`
+        publish_date = `git log --format='format:%ci' --diff-filter=A "#{item}"`
         @posts.push(Post.new(title, slug, item, publish_date))
       end
     end
