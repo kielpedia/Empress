@@ -53,9 +53,11 @@ class BlogBuilder
     end
 
     def create_tags_for_post(post_slug)
-      tag_file = post_slug + ".json"
-      print JSON.parse(IO.read(tag_file))
-      @tags = ['test']
+      @tags = []
+      tag_file = post_slug + ".jso"
+      if File.exists?(tag_file)
+        print JSON.parse(IO.read(tag_file))
+      end
     end
 
     def jsonify_posts
