@@ -42,15 +42,19 @@ class BlogBuilder
     def set_post_metadata
       @posts = []
       Dir.glob('./content/posts/*.md').each do |item|
-        print item + "\n"
         title = File.open(item, &:readline)
         title = title.gsub("\n", "")
         title[0] = ''
         title = title.strip
         slug = item[0...-3]
         publish_date = `git log --format='format:%ci' --diff-filter=A "#{item}"`
-        @posts.push(Post.new(title, slug, item, publish_date, []))
+        @posts.push(Post.new(title, slug, item, publish_date, create_tags_for_post(title)))
       end
+    end
+
+    def create_tags_for_post(post_title)
+      print post_title
+      @tags = []
     end
 
     def jsonify_posts
