@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ef96654-455f-42e7-8af8-043885b86bf4" name="Default" comment="add tag file for default post">
+      <change type="DELETED" beforePath="C:\development\workspaces\github\Empress\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="C:\development\workspaces\github\Empress\.idea\Empress.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\development\workspaces\github\Empress\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\development\workspaces\github\Empress\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\development\workspaces\github\Empress\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\development\workspaces\github\Empress\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\development\workspaces\github\Empress\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\development\workspaces\github\Empress\.idea\workspace.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.rb" afterPath="$PROJECT_DIR$/build.rb" />
     </list>
     <ignored path="Empress.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="1ef96654-455f-42e7-8af8-043885b86bf4" time="1375656504360" ignored="false" />
-    <file path="/build.rb" changelist="1ef96654-455f-42e7-8af8-043885b86bf4" time="1375658204043" ignored="false" />
+    <file path="/build.rb" changelist="1ef96654-455f-42e7-8af8-043885b86bf4" time="1375658444274" ignored="false" />
     <file path="/Welcome-to-Empress.json" changelist="1ef96654-455f-42e7-8af8-043885b86bf4" time="1375656400051" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +48,7 @@
       <file leaf-file-name="build.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="70" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.58787876">
+            <state line="51" column="64" selection-start="1890" selection-end="1890" vertical-scroll-proportion="0.5672727">
               <folding />
             </state>
           </provider>
@@ -369,7 +377,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="70" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.58787876">
+        <state line="51" column="64" selection-start="1890" selection-end="1890" vertical-scroll-proportion="0.5672727">
           <folding />
         </state>
       </provider>

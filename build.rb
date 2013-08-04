@@ -25,11 +25,12 @@ require 'date'
 require 'active_support/all'
 
 class Post
-  def initialize(title, slug, filename, publish_date)
+  def initialize(title, slug, filename, publish_date, tags)
   	@title = title
   	@slug = slug
     @filename = filename 
     @publish_date = publish_date
+    @tags = tags
   end
 end
 
@@ -48,7 +49,7 @@ class BlogBuilder
         title = title.strip
         slug = item[0...-3]
         publish_date = `git log --format='format:%ci' --diff-filter=A "#{item}"`
-        @posts.push(Post.new(title, slug, item, publish_date))
+        @posts.push(Post.new(title, slug, item, publish_date, []))
       end
     end
 
