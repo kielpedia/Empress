@@ -48,11 +48,13 @@ class BlogBuilder
         title = title.strip
         slug = item[0...-3]
         publish_date = `git log --format='format:%ci' --diff-filter=A "#{item}"`
-        @posts.push(Post.new(title, slug, item, publish_date, create_tags_for_post(title)))
+        @posts.push(Post.new(title, slug, item, publish_date, create_tags_for_post(slug)))
       end
     end
 
-    def create_tags_for_post(post_title)
+    def create_tags_for_post(post_slug)
+      tag_file = post_slug + ".json"
+      print JSON.parse(IO.read(tag_file))
       @tags = ['test']
     end
 
