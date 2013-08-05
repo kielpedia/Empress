@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ef96654-455f-42e7-8af8-043885b86bf4" name="Default" comment="add tag file for default post">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/posts/Welcome-to-Empress.json" afterPath="$PROJECT_DIR$/content/posts/Welcome-to-Empress.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.rb" afterPath="$PROJECT_DIR$/build.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Empress.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="1ef96654-455f-42e7-8af8-043885b86bf4" time="1375656504360" ignored="false" />
-    <file path="/build.rb" changelist="1ef96654-455f-42e7-8af8-043885b86bf4" time="1375661606100" ignored="false" />
+    <file path="/build.rb" changelist="1ef96654-455f-42e7-8af8-043885b86bf4" time="1375662208530" ignored="false" />
     <file path="/Welcome-to-Empress.json" changelist="1ef96654-455f-42e7-8af8-043885b86bf4" time="1375656400051" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,7 @@
       <file leaf-file-name="build.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="47" selection-start="2260" selection-end="2260" vertical-scroll-proportion="0.90304184">
+            <state line="71" column="0" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.5658627">
               <folding />
             </state>
           </provider>
@@ -50,7 +51,7 @@
       <file leaf-file-name="Welcome-to-Empress.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/posts/Welcome-to-Empress.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="60" selection-start="100" selection-end="100" vertical-scroll-proportion="-3.9230769">
+            <state line="1" column="9" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -59,7 +60,7 @@
       <file leaf-file-name="posts.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/posts.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.0">
+            <state line="0" column="225" selection-start="225" selection-end="225" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -89,14 +90,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/content/posts.json" />
         <option value="$PROJECT_DIR$/content/posts/Welcome-to-Empress.json" />
         <option value="$PROJECT_DIR$/build.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="840" />
-    <option name="width" value="840" />
+    <option name="x" value="463" />
+    <option name="width" value="1217" />
     <option name="height" value="1010" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -239,14 +241,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="0" width="840" height="1010" extended-state="0" />
+    <frame x="463" y="0" width="1217" height="1010" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33607522" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27340823" sideWeight="0.6639248" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18590832" sideWeight="0.6639248" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -345,23 +347,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/Welcome-to-Empress.json">
+    <entry file="file://$PROJECT_DIR$/content/posts.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="60" selection-start="100" selection-end="100" vertical-scroll-proportion="-3.9230769">
+        <state line="0" column="225" selection-start="225" selection-end="225" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts.json">
+    <entry file="file://$PROJECT_DIR$/content/posts/Welcome-to-Empress.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.0">
+        <state line="1" column="9" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="47" selection-start="2260" selection-end="2260" vertical-scroll-proportion="0.90304184">
+        <state line="71" column="0" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.5658627">
           <folding />
         </state>
       </provider>

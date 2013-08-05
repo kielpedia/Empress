@@ -55,17 +55,20 @@ class BlogBuilder
         title = title.strip
         slug = item[0...-3]
         publish_date = `git log --format='format:%ci' --diff-filter=A "#{item}"`
-        @posts.push(Post.new(title, slug, item, publish_date, create_tags_for_post(slug)))
+        tags = create_meta_data_for_post(slug)
+        @posts.push(Post.new(title, slug, item, publish_date, tags))
       end
     end
 
-    def create_tags_for_post(post_slug)
+    def create_meta_data_for_post(post_slug)
       @tags = []
       tag_file = post_slug + ".json"
       if File.exists?(tag_file)
         post_meta = JSON.parse(IO.read(tag_file))
-        post_meta['tags'].each do |tag|
-            @tags.push(Tag.new(tag['name'], 1))
+        unless post_meta['tags'].nil?
+          post_meta['tags'].each do |tag|
+              @tags.push(Tag.new(tag['name'], 1))
+          end
         end
       end
       return @tags
