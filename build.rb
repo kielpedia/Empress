@@ -34,6 +34,13 @@ class Post
   end
 end
 
+class Tag
+  def initialize(name, count)
+    @name = name
+    @count = count
+  end
+end
+
 class BlogBuilder
   class << self
 
@@ -56,7 +63,9 @@ class BlogBuilder
       @tags = []
       tag_file = post_slug + ".jso"
       if File.exists?(tag_file)
-        print JSON.parse(IO.read(tag_file))
+        JSON.parse(IO.read(tag_file)).each do |tag|
+            @tags.push(Tag.new(tag.name, 1))
+        end
       end
       return @tags
     end
