@@ -58,6 +58,7 @@ class BlogBuilder
       if File.exists?(tag_file)
         print JSON.parse(IO.read(tag_file))
       end
+      return @tags
     end
 
     def jsonify_posts
