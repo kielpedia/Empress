@@ -61,10 +61,11 @@ class BlogBuilder
 
     def create_tags_for_post(post_slug)
       @tags = []
-      tag_file = post_slug + ".jso"
+      tag_file = post_slug + ".json"
       if File.exists?(tag_file)
-        JSON.parse(IO.read(tag_file)).each do |tag|
-            @tags.push(Tag.new(tag.name, 1))
+        post_meta = JSON.parse(IO.read(tag_file))
+        post_meta['tags'].each do |tag|
+            @tags.push(Tag.new(tag['name'], 1))
         end
       end
       return @tags
