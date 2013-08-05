@@ -35,9 +35,17 @@ class Post
 end
 
 class Tag
-  def initialize(name, count)
+  def initialize(name)
     @name = name
-    @count = count
+    @count = 1
+  end
+
+  def ==(other_object)
+    other_object.has_attribute?('name') and @name == other_object.name
+  end
+
+  def increment
+    @count += 1
   end
 end
 
@@ -48,6 +56,7 @@ class BlogBuilder
 
     def set_post_metadata
       @posts = []
+      @taqs = []
       Dir.glob('./content/posts/*.md').each do |item|
         title = File.open(item, &:readline)
         title = title.gsub("\n", "")
@@ -56,22 +65,37 @@ class BlogBuilder
         slug = item[0...-3]
         publish_date = `git log --format='format:%ci' --diff-filter=A "#{item}"`
         tags = create_meta_data_for_post(slug)
+        aggregate_tags(tags)
         @posts.push(Post.new(title, slug, item, publish_date, tags))
       end
     end
 
+    #right now only tags are included but any other metadata could be added to
+    #the post
     def create_meta_data_for_post(post_slug)
-      @tags = []
+      tags = []
       tag_file = post_slug + ".json"
       if File.exists?(tag_file)
         post_meta = JSON.parse(IO.read(tag_file))
         unless post_meta['tags'].nil?
           post_meta['tags'].each do |tag|
-              @tags.push(Tag.new(tag['name'], 1))
+              tags.push(Tag.new(tag['name']))
           end
         end
       end
-      return @tags
+      return tags
+    end
+
+    def aggregate_tags(tags)
+      if tags.any?
+        tags.each do |tag|
+            if @tags.include? tag
+              @tags[tag].increment
+            else
+              @tags.push(tag)
+            end
+        end
+      end
     end
 
     def jsonify_posts
